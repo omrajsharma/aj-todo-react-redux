@@ -1,8 +1,14 @@
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { ADD_TODO, DELETE_TODO, EDIT_TODO, TOGGLE_TODO } from "./action";
 
 const initialState = {
-    todos: []
+    todos: [],
+    status: 'idle', // 'idle', 'loading', 'succeeded', 'failed'
+    error: null
 }
+
+createSlice
+createAsyncThunk
 
 const todoReducer = (state = initialState, action) => {
     switch(action.type) {
