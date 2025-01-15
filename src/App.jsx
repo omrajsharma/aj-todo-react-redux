@@ -3,6 +3,7 @@ import { Provider } from 'react-redux'
 import store from './redux/store'
 import AddTodo from './components/AddTodo'
 import TodoList from './components/TodoList'
+import PostsList from './components/PostList'
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <div>
         <AddTodo />
         <TodoList />
+        <PostsList />
       </div>
     </Provider>
   )
